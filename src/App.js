@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import './index.css';
+import React, { useState } from "react"
+import "./index.css";
 
 function App() {
    
@@ -62,120 +62,123 @@ CpfDoTitular : " "
     console.log("Formulário Enviado com Sucesso",Form)
 
     SetForm({
-      Nome : " ", 
-      Cargo : " ",
-      Matricula : " ",
-      CPF : " ",
-      RG : " ",
-      DataDeNascimento: " ",
-      Naturalidade : " ",
-      Nacionalidade : " ",
-      Altura : " ",
-      Peso : " ",
-      Raca : " ",
-      CorDosOlhos : " ",
-      EmailPessoal : " ",
-      EmailDeTrabalho : " ",
-      Telefone : " ",
-      Pis : " ",
-      TempoDeServico : " ",
-      Cep : " ",
-      Estado : " ",
-      Cidade : " ",
-      Bairro : " ",
-      Rua : " ",
-      Numero : " ",
-      Complemento : " ",
-      PontoDereferencia : " ",
-      Conjuge : " ",
-      Linkedin : " ",
-      GitHub : " ",
-      Banco : " ",
-      Agencia : " ",
-      Conta : " ",
-      Titular : " ",
-      Pix : " ",
-      Trello : " ",
-      Gitlab : " ",
-      Discord : " ",
-      DataDeAdmissao : " ",
-      DataDeDesligamento : " ",
-      EnderecoDaImagem : " ", 
-      CpfDoTitular : " "})    
+      Nome:'', 
+      Cargo:'',
+      Matricula:'',
+      CPF:'',
+      RG:'',
+      DataDeNascimento:'',
+      Naturalidade:'',
+      Nacionalidade:'',
+      Altura:'',
+      Peso:'',
+      Raca:'',
+      CorDosOlhos:'',
+      EmailPessoal:'',
+      EmailDeTrabalho:'',
+      Telefone:'',
+      Pis:'',
+      TempoDeServico:'',
+      Cep:'',
+      Estado:'',
+      Cidade:'',
+      Bairro:'',
+      Rua:'',
+      Numero:'',
+      Complemento:'',
+      PontoDereferencia:'',
+      Conjuge:'',
+      Linkedin:'',
+      GitHub:'',
+      Banco:'',
+      Agencia:'',
+      Conta:'',
+      Titular:'',
+      Pix:'',
+      Trello:'',
+      Gitlab:'',
+      Discord:'',
+      DataDeAdmissao:'',
+      DataDeDesligamento:'',
+      EnderecoDaImagem:'', 
+      CpfDoTitular:''})    
   }
   
 
    return ( 
-    <div className='geral'>
+    <div className="geral">
         <form onSubmit = {handleSubmit}>
-          <h2 className ='cadastroColaboradores'>Cadastro de Colaboradores</h2>
+          <h2 className ="cadastroColaboradores">Cadastro de Colaboradores</h2>
 
-          <h3 className = 'pessoais'>Informações pessoais</h3>
+          <h3 className ="pessoais">Informações pessoais</h3>
 
-          <section className = "Informações Pessoais">
-
-
+          <section className ="Informações Pessoais">
 
 
-          <div className='pessoais1'>
 
-          <div className = 'Nome'>
+
+          <div className="pessoais1">
+
+
+
+
+          <div className="Nome">
             <label>Nome</label>
-            <input className='inputNome'
-            name="Nome"
-            value={Form.Nome}
-            onChange={handleChange}
+              <input className="inputNome"
+             name="Nome"
+             value={Form.Nome}
+             onChange={handleChange}
            />
           </div>
 
-          <div className = "CPF">
+          <div className="CPF">
           <label>CPF</label>
-          <input
+          <input className="inputCPF"
             name="CPF"
             value={Form.CPF}
             onChange={handleChange}
            />
            </div>
 
-          <div className='Matricula'>
-          <label>Matrícula</label>
-          <input
-            name="Matricula"
-            value={Form.Matricula}
-            onChange={handleChange}
+          <div className="Matricula">
+            <label>Matrícula</label>
+            <input className="inputMatricula"
+              name="Matricula"
+              value={Form.Matricula}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="Nacionalidade">
+            <label>Nacionalidade</label>
+            <input className="inputNacionalidade"
+              name="Nacionalidade"
+              value={Form.Nacionalidade}
+              onChange={handleChange}
            />
            </div>
 
-          <div className='Nacionalidade'>
-          <label>Nacionalidade</label>
-          <input
-            name="Nacionalidade"
-            value={Form.Nacionalidade}
-            onChange={handleChange}
+          <div className="Naturalidade">
+            <label>Naturalidade</label>
+            <input className="inputNaturalidade"
+             name="Naturalidade"
+              value={Form.Naturalidade}
+              onChange={handleChange}
            />
            </div>
 
-          <div className = 'Naturalidade'>
-          <label>Naturalidade</label>
-          <input
-            name="Naturalidade"
-            value={Form.Naturalidade}
-            onChange={handleChange}
-           />
-           </div>
-
-          <div className = 'Raca'>
+          <div className ="Raca">
           <label>Raça</label>
-          <input
+          <input className="inputRaca"
             name="Raca"
             value={Form.Raca}
             onChange={handleChange}
            />
            </div>
 
-          <div className = 'Conjuge'>
+          <div className ="Conjuge">
           <label>Conjuge</label>
-          <input
+          <input className="inputConjuge"
             name="Conjuge"
             value={Form.Conjuge}
             onChange={handleChange}
@@ -189,138 +192,158 @@ CpfDoTitular : " "
 
 
 
-          <div className='Cargo'>
-          <label>Cargo</label>
-          <input
-            name="Cargo"
-            value={Form.Cargo}
-            onChange={handleChange}
+        <div className="pessoais2">
+
+          <div className="Cargo">
+            <label>Cargo</label>
+            <input className="inputCargo"
+              name="Cargo"
+              value={Form.Cargo}
+              onChange={handleChange}
            />
            </div>
 
-          <div className = 'RG'>
+
+          <div className = "RG">
           <label>RG</label>
-          <input
+          <input className="inputRG"
             name="RG"
             value={Form.RG}
             onChange={handleChange}
            />
            </div>
 
-          <div className = 'Peso'>
-          <label>Peso</label>
-          <input
-            name="Peso"
-            value={Form.Peso}
-            onChange={handleChange}
+          <div className = "Peso">
+            <label>Peso</label>
+            <input className ="inputPeso"
+              name="Peso"
+              value={Form.Peso}
+              onChange={handleChange}
            />
            </div>
 
-          <div className = 'Altura'>
-          <label>Altura</label>
-          <input
-            name="Altura"
-            value={Form.Altura}
-            onChange={handleChange}
+          <div className = "Altura">
+            <label>Altura</label>
+            <input className="inputAltura"
+              name="Altura"
+              value={Form.Altura}
+              onChange={handleChange}
            />
            </div>
 
-          <div className = 'Nascimento'>
-          <label>Data de Nascimento</label>
-          <input
-            name="DataDeNascimento"
-            value={Form.DataDeNascimento}
-            onChange={handleChange}
+          <div className = "Nascimento">
+            <label>Data de Nascimento</label>
+            <input className="inputDataDeNascimento"
+              name="DataDeNascimento"
+              value={Form.DataDeNascimento}
+              onChange={handleChange}
            />
            </div>
 
-          <div className ='Olhos'>
+          <div className ="Olhos">
            <label>Cor dos Olhos</label>
-          <input
+          <input className="inputCorDosOlhos"
             name="CorDosOlhos"
             value={Form.CorDosOlhos}
             onChange={handleChange}
            />
            </div>
 
-          <div className='EmailP'>
+
+          </div>
+
+
+          <div className="pessoais3">
+
+          <div className="EmailP">
           <label>E-mail Pessoal</label>
-          <input
+          <input className="inputEmailPessoal"
             name="EmailPessoal"
             value={Form.EmailPessoal}
             onChange={handleChange}
            />
            </div>
 
-          <div className='EmailT'>
-          <label>E-mail De Trabalho</label>
-          <input
-            name="EmailDeTrabalho"
-            value={Form.EmailDeTrabalho}
-            onChange={handleChange}
+          <div className="EmailT">
+            <label>E-mail De Trabalho</label>
+            <input className="inputEmailDeTrabalho"
+             name="EmailDeTrabalho"
+             value={Form.EmailDeTrabalho}
+             onChange={handleChange}
            />
            </div>
 
-          <div className='Telefone'>
+          <div className="Telefone">
           <label>Telefone</label>
-          <input
+          <input className="inputTelefone"
             name="Telefone"
             value={Form.Telefone}
             onChange={handleChange}
            />
            </div>
 
-          <div className='TempoDeServico'>
+          <div className="TempoDeServico">
           <label>Tempo de Serviço</label>
-          <input
+          <input className="inputTempoDeServico"
             name="TempoDeServico"
             value={Form.TempoDeServico}
             onChange={handleChange}
            />
            </div>
 
-           <div className='DatadeAdmissao'>
+           <div className="DatadeAdmissao">
           <label>Data de Admissão</label>
-          <input
+          <input className="inputDataDeAdmissao"
             name="DataDeAdmissao"
             value={Form.DataDeAdmissao}
             onChange={handleChange}
            />
            </div>
 
-           <div className='DatadeDesligamento'>
+           <div className="DatadeDesligamento">
           <label>Data de Desligamento</label>
-          <input
+          <input className="inputDataDeDesligamento"
             name="DataDeDesligamento"
             value={Form.DataDeDesligamento}
             onChange={handleChange}
            />
            </div>
 
-           <div className='EnderecoDaImagem'>
+           <div className="EnderecoDaImagem">
           <label>Imagem</label>
-          <input
+          <input className="inputEnderecoDaImagem"
             name="EnderecoDaImagem"
             value={Form.EnderecoDaImagem}
             onChange={handleChange}
            />
            </div>
 
-           <div className='Pis'>
+           <div className="Pis">
           <label>Pis</label>
-          <input
+          <input className="inputPis"
             name="Pis"
             value={Form.Pis}
             onChange={handleChange}
            />
            </div>
+
+
+          </div>
+
+
+
           </section>
+
+
+
 
           <h3>Informações Residênciais</h3>
 
           <section className = "Informações Residênciais">
 
-          <div className='Cep'>
+          <div className="endereco1">
+
+          <div className="Cep">
           <label>Cep</label>
           <input
             name="Cep"
@@ -329,7 +352,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Cidade'>
+           <div className="Cidade">
           <label>Cidade</label>
           <input
             name="Cidade"
@@ -338,7 +361,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Bairro'>
+           <div className="Bairro">
           <label>Bairro</label>
           <input
             name="Bairro"
@@ -347,7 +370,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Rua'>
+           <div className="Rua">
           <label>Rua</label>
           <input
             name="Rua"
@@ -356,7 +379,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Numero'>
+           <div className="Numero">
           <label>N°</label>
           <input
             name="Numero"
@@ -365,7 +388,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Estado'>
+           <div className="Estado">
           <label>Estado</label>
           <input
             name="Estado"
@@ -374,7 +397,14 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Complemento'>
+
+
+           </div>
+
+
+
+
+           <div className="Complemento">
           <label>Complemento</label>
           <input
             name="Complemento"
@@ -383,7 +413,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='PontoDeReferencia'>
+           <div className="PontoDeReferencia">
           <label>Ponto De Referência</label>
           <input
             name="PontoDeReferencia"
@@ -396,7 +426,7 @@ CpfDoTitular : " "
           <h3>Informações Sociais</h3>
           <section className = "Informações Sociais">
 
-          <div className='Linkedin'>
+          <div className="Linkedin">
           <label>Linkedin</label>
           <input
             name="Linkedin"
@@ -405,7 +435,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='GitLab'>
+           <div className="GitLab">
           <label>GitLab</label>
           <input
             name="GitLab"
@@ -414,7 +444,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Discord'>
+           <div className="Discord">
           <label>Discord</label>
           <input
             name="Discord"
@@ -423,7 +453,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Trello'>
+           <div className="Trello">
           <label>Trello</label>
           <input
             name="Trello"
@@ -435,7 +465,7 @@ CpfDoTitular : " "
 
           <h3>Informações Bancárias</h3>
           <section className = "Informações Bancárias">
-          <div className='Banco'>
+          <div className="Banco">
           <label>Banco</label>
           <input
             name="Banco"
@@ -444,7 +474,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Agencia'>
+           <div className="Agencia">
           <label>Agência</label>
           <input
             name="Agencia"
@@ -453,7 +483,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Titular'>
+           <div className="Titular">
           <label>Titular</label>
           <input
             name="Titular"
@@ -462,7 +492,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='CpfDoTitular'>
+           <div className="CpfDoTitular">
           <label>CPF do Titular</label>
           <input
             name="CpfDoTitular"
@@ -471,7 +501,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Pix'>
+           <div className="Pix">
           <label>Pix</label>
           <input
             name="Pix"
@@ -480,7 +510,7 @@ CpfDoTitular : " "
            />
            </div>
 
-           <div className='Conta'>
+           <div className="Conta">
           <label>Numero da Conta</label>
           <input
             name="Conta"
