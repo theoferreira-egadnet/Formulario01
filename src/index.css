@@ -1,30 +1,28 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    font-family: arial , sans-serif;
+    font-family: arial, sans-serif;
     box-sizing: border-box;
 }
 
-div .geral{
+div .geral {
     margin: 40px;
     padding: 10px;
 }
 
-section{
+section {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     margin: 10px;
     align-items: center;
-    gap: 20px;
+    column-gap: 15px;
+    row-gap: 10px;
     flex-wrap: wrap;
 }
 
-.pessoais{
-    margin-top: 10px;
-    font-size: 25px;
-}
 
-div h2 { 
+
+h2 {
     text-align: center;
     margin-bottom: 50px;
     font-size: 35px;
@@ -33,46 +31,367 @@ div h2 {
 
 
 
-div h3 {
+h3 {
     align-items: left;
     margin: 30px 15px;
-    font-size: 25px;
+    font-size: 35px;
 }
 
-.pessoais{
+.pessoais {
     display: flex;
     align-items: left;
     margin: 15px;
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 35px;
 }
 
-.pessoais1{
+input {
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* =========================================================== */
+
+
+.pessoais1 {
     display: flex;
     margin: 15px;
     font-size: 20px;
     gap: 20px;
 }
 
-.inputNome{
-    width:250px;
-    height: 30px;
-    border-radius: 7px;
+.inputNome {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
 }
 
-.inputCPF{
-    width:200px;
-    height: 30px;
-    border-radius: 7px;
+.inputCPF {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
 }
 
-.inputMatricula{
-    width:250px;
-    height:30px;
-    border-radius:7px;
+.inputMatricula {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
 }
 
-.inputNacionalidade{
-    width:250px;
-    height:30px;
-    border-radius:7px;
+.inputNacionalidade {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputNaturalidade {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputRaca {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputConjuge {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/* =========================================================== */
+
+
+.pessoais2 {
+    display: flex;
+    margin: 15px;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.inputCargo {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputRG {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputPeso {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputAltura {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputDataDeNascimento {
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputCorDosOlhos {
+    width: 335px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/* =========================================================== */
+
+
+.pessoais3 {
+    display: flex;
+    margin: 15px;
+    font-size: 20px;
+    gap: 20px;
+}
+
+
+.inputEmailPessoal {
+    width: 215px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputEmailDeTrabalho {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputTelefone {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputTempoDeServico {
+    width: 199;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputDataDeAdmissao {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputDataDeDesligamento {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputEnderecoDaImagem {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputPis {
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/* =========================================================== */
+
+
+
+.endereco1 {
+    display: flex;
+    margin: 15px;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.inputCep {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputCidade {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputBairro {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputRua {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputNumero {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputEstado {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/*=========================================================== */
+
+.endereco2 {
+    display: flex;
+    margin: 15px;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.inputComplemento {
+    display: flex;
+    width: 910px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputPontoDeReferencia {
+    display: flex;
+    width: 820px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/*=========================================================== */
+
+
+.sociais1 {
+    display: flex;
+    margin: 15px;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.inputLinkedin {
+    display: flex;
+    width: 425px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputGitLab {
+    display: flex;
+    width: 425px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputDiscord {
+    display: flex;
+    width: 425px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputTrello {
+    display: flex;
+    width: 425px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/*=========================================================== */
+
+.banco1 {
+
+    display: flex;
+    margin: 15px;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.inputBanco {
+    display: flex;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputAgencia {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputTitular {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+.inputCpfDoTitular {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+.inputPix {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+.inputConta {
+    display: flex;
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/*=========================================================== */
+
+.button {
+
+ display: flex;
+ justify-content: center;
+ align-items: center; 
+ width : 150px;
+ height: 70px;
+ font-size: 35px;
+ border-radius: 5px;
+ background-color: black;
+ color:white;
+ cursor: pointer;
+ margin-left : 800px;
+ margin-top: 50px;
+
+
 }
